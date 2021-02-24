@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>View Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li>
+              <form class="form-inline my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="createproject.html">Submit</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+          <h3>Project 1</h3>
+          <div class="row bg-light p-3 d-flex">
+            <div class="col">
+              Created By: Jane Doe
+            </div>
+            <div class="col">
+              Date Created: 00/00/0000
+            </div>
+            <div class="col">
+              Last Updated: 01/01/0001
+            </div>
+            <div class="col d-flex justify-content-end">
+              <a href="editproject.html" class="btn btn-primary">Edit Project</a>
+            </div>
+          </div>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <h5>Project Abstract</h5>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reiciendis adipisci deserunt obcaecati est distinctio porro esse sapiente, omnis ipsam. Incidunt ullam voluptate deserunt dolor eveniet, perspiciatis dignissimos aut quibusdam sunt accusamus ex labore nemo, sapiente tempora sit omnis temporibus repellendus, debitis laudantium fugit numquam possimus! Ullam iste provident amet.</p>
+            <h5>Comments</h5>
+            <textarea name="comments" id="" cols="30" rows="5" placeholder="Leave a comment..." class="form-control"></textarea>
+            <input type="submit" value="Submit" class="btn btn-primary w-25 my-3">
+            <hr>
+            <p>No comments yet</p>
+          </div>
+          <div class="col">
+            <h5>Project Details</h5>
+            <div class="card mb-3">
+              <div class="card-header">
+                Author(s)
+              </div>
+              <div class="card-body">
+                <p class="card-text">Kachukwuh</p>
+              </div>
+              <div class="card-header">
+                <a href="#">#Web</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                Project Files
+              </div>
+              <div class="card-body">
+                <p class="card-text">No files uploaded yet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="d-flex alert alert-secondary">
+      <p class="ml-auto">Project Explorer &copy; 2021</p>
+    </footer>
+  </body>
+</html>
