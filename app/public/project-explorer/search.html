@@ -40,31 +40,33 @@
     <main>
       <section class="container">
         <h3>Project Gallery</h3>
-        <form name="searchForm" action="" class="bg-light p-3">
-          <div class="form-row">
-            <div class="col-7"> 
-              <input
-                type="text"
-                name="searchTerm"
-                id=""
-                placeholder="Project Name, Authors, Abstract, Tags"
-                class="form-control form-control-lg"
-              />
+        <div class="bg-light p-3">
+          <form name="searchForm" action="">
+            <div class="form-row">
+              <div class="col-7"> 
+                <input
+                  type="text"
+                  name="searchTerm"
+                  id=""
+                  placeholder="Project Name, Authors, Abstract, Tags"
+                  class="form-control form-control-lg"
+                />
+              </div>
+              <div class="col-3 d-flex">
+                <label for="searchType">Search By</label>
+                <select name="searchType" id="" class="form-control form-control-lg">
+                  <option value="Name">Name</option>
+                  <option value="Abstract">Abstract</option>
+                  <option value="Authors">Authors</option>
+                  <option value="Tags">Tags</option>
+                </select>
+              </div>
+              <div class="col">
+                <input type="submit" value="Submit" class="btn btn-lg and btn-primary"/>
+              </div>
             </div>
-            <div class="col-3 d-flex">
-              <label for="searchType">Search By</label>
-              <select name="searchType" id="" class="form-control form-control-lg">
-                <option value="Name">Name</option>
-                <option value="Abstract">Abstract</option>
-                <option value="Authors">Authors</option>
-                <option value="Tags">Tags</option>
-              </select>
-            </div>
-            <div class="col">
-              <input type="submit" value="Submit" class="btn btn-lg and btn-primary"/>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
       <section class="container">
         <h4>All Projects</h4>
