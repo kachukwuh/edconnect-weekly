@@ -2,14 +2,14 @@ const DataModel = require('./data_model');
 
 class User {
     constructor(id, firstname, lastname, email, password, matricNumber, program, graduationYear) {
-        this.id = id,
-        this.firstname = firstname,
-        this.lastname = lastname,
-        this.email = email,
-        this.password = password,
-        this.matricNumber = matricNumber,
-        this.program = program,
-        this.graduationYear = graduationYear
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.password = password;
+        this.matricNumber = matricNumber;
+        this.program = program;
+        this.graduationYear = graduationYear;
 
     }
 
